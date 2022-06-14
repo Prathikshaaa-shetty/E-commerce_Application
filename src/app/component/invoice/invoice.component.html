@@ -1,0 +1,71 @@
+<app-header></app-header>
+
+<div class="invoice-box" style="margin-top: 5%">
+  <table>
+    <tr class="top">
+      <td colspan="2">
+        <table>
+          <tr>
+            <td class="title">
+              <img
+                src="https://www.financialexpress.com/wp-content/uploads/2021/02/myntra.jpg"
+                alt="myntra"
+                style="width: 100%; max-width: 300px"
+              />
+            </td>
+
+            <td style="color: fuchsia; font-weight: bolder">INVOICE<br /></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr class="information">
+      <td colspan="2">
+        <table>
+          <tr>
+            <td>
+              <!-- Sparksuite, Inc.<br />
+              12345 Sunny Road<br />
+              Sunnyville, TX 12345 -->
+            </td>
+
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr class="heading">
+      <td>Order Placed Sucessfully</td>
+    </tr>
+
+    <tr>
+      <td>Item's Ordered:</td>
+      <td></td>
+    </tr>
+
+    <!-- <tr class="details">
+      <td>Check</td>
+
+      <td>1000</td>
+    </tr> -->
+
+    <div *ngFor="let item of products; index as i">
+      <tr>
+        <td>{{ i + 1 }}. {{ item.title }} -</td>
+        <td style="text-align: end; font-weight: bold">
+          $ {{ item.price * item.quantity }}
+        </td>
+      </tr>
+    </div>
+
+    <tr class="total">
+      <td></td>
+
+      <td>Amount: ${{ localData }}</td>
+    </tr>
+  </table>
+  <input type="email" name="email" alt="Email" placeholder="Enter the email address"   [(ngModel)]="email" />
+  <hr/>
+  <button class="btn btn-primary" (click)="onSendMail()" style="margin-top: 20px;">Send Mail</button>
+</div>

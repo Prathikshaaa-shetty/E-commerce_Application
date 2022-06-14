@@ -1,0 +1,24 @@
+<section style="padding-top: 10%;">
+    <div class="container login-container">
+      <div class="col login-box">
+        <p class="roboto login pt-3">Login to Grasp</p>
+        <!-- <p class="text-secondary text-uppercase mt-4">Easily using</p>
+        <button type="button" class="btn btn-outline-secondary l-fb-btn"><a href="www.facebook.com">Facebook</a></button>
+        <button type="button" class="btn btn-outline-secondary l-fb-btn"><a
+            href="http://www.mail.google.com">Google</a></button>
+        <p class="text-secondary text-uppercase mt-5">- or using email -</p> -->
+        <form action="./portfolio.html" [formGroup]="loginForm">
+          <fieldset class="fields">
+            <input type="email" placeholder="Your Email Address" name="emailId" id="emailId" formControlName="email_Id" class="register-email">
+            <input type="password" placeholder="Enter Password" name="password" id="" formControlName="password"  class="register-password">
+          </fieldset>
+          <fieldset class="login-btn" (click)="onLogin()">
+            <input type="submit" value="log in" class="roboto" >
+          </fieldset>
+        </form>
+       <!-- <p class="newUser" >New to Myntra?<a
+            [routerLink]="['/sign-up']">Create Account</a></p> -->
+            <p class="existing-acc-login">New to Myntra ?<span><a [routerLink]="['/sign-up']"> SignUp!</a></span>
+      </div>
+    </div>
+  </section>

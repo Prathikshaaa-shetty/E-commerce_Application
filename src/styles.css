@@ -1,0 +1,659 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.l-container {
+  height: 80px;
+}
+
+.l-navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+.search-query {
+  float: right;
+  width: 335px;
+  float: right;
+}
+
+.search {
+  box-sizing: content-box;
+  padding: 8px 0 2px;
+  background-color: #f5f5f6;
+  width: 40px;
+  height: 40px;
+}
+
+.l-searchbtn {
+  width: 335px !important;
+  border: 1px solid rgba(0, 0, 0, 0) !important;
+  border: none;
+  border-radius: 2px;
+  background-color: #f5f5f6;
+}
+
+.l-searchbtn:focus {
+  border: 1px solid silver !important;
+  box-shadow: none;
+}
+
+.l-inline {
+  display: inline-block;
+}
+
+.l-searchbtn:focus {
+  border: none;
+}
+
+.searchicon {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+}
+
+.search-query .l-searchbtn::placeholder {
+  font-size: 14px;
+}
+
+.nav-shadow {
+  background-color: rgb(255, 255, 255);
+  height: 80px;
+  -webkit-box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+}
+
+.nav-shadow,
+.nav-shadow a:hover {
+  text-decoration: none;
+}
+
+.arvo {
+  font-family: "Arvo", serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.l-nav-link {
+  color: black;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: small;
+  text-transform: uppercase;
+  padding: 12px 17px 28px 17px;
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.l-nav-link:hover {
+  color: black;
+}
+
+.l-nav-link:hover::after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  content: "";
+  background-color: black;
+  height: 3px;
+}
+
+.l-nav-link2 {
+  color: black;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 12px 17px 32px 17px;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.l-nav-link2:hover {
+  color: black;
+}
+
+.l-nav-link2:hover::after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  content: "";
+  background-color: black;
+  height: 3px;
+}
+/* Dropdowns */
+.men {
+  text-align: left;
+  top: 77px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  height: 440px;
+  position: absolute;
+  width: 1200px;
+  background-color: #fff;
+  border-radius: 0px;
+  z-index: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.women {
+  text-align: left;
+  top: 77px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  height: 440px;
+  position: absolute;
+  width: 1200px;
+  background-color: #fff;
+  border-radius: 0px;
+  transform: translate(-47px, 0) !important;
+  z-index: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.kids {
+  text-align: left;
+  top: 77px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  height: 440px;
+  position: absolute;
+  width: 1200px;
+  background-color: #fff;
+  border-radius: 0px;
+  transform: translate(-117px, 0) !important;
+  z-index: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.profile {
+  position: relative;
+  width: 280px;
+  height: 320px;
+  border-radius: 0px;
+  left: 50% !important;
+  right: auto !important;
+  margin: auto;
+  text-align: left !important;
+  transform: translate(-50%, 0) !important;
+  border: none;
+}
+
+.to-show {
+  display: none;
+}
+
+.to-hover:hover > .to-show {
+  display: block;
+}
+
+.profile-shadow {
+  border: none;
+  -webkit-box-shadow: 0px 4px 26px -19px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 26px -19px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 26px -19px rgba(0, 0, 0, 0.75);
+}
+
+.profile-shadow,
+.profile-shadow a:hover {
+  text-decoration: none;
+}
+
+.l-drp-itm {
+  color: rgb(253, 72, 109);
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 500 !important;
+}
+
+.l-drp-itm:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(253, 72, 109);
+}
+
+/* Profile Signup Login */
+.l-profile-btn {
+  color: rgb(253, 72, 109);
+  text-align: left !important;
+  height: 35px;
+  margin: 0px 0px 0px 10px;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 0;
+  border: 1px solid rgb(0, 0, 0, 0.2) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  outline: none !important;
+}
+
+.l-profile-btn:hover {
+  color: rgb(253, 72, 109);
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: 1px solid rgb(253, 72, 109) !important;
+  outline: none !important;
+}
+
+.l-profile-btn:focus a {
+  color: rgb(253, 72, 109);
+  background-color: rgba(0, 0, 0, 0) !important;
+  outline: none !important;
+}
+
+.l-profile-btn:active {
+  color: rgb(253, 72, 109);
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: 1px solid rgb(253, 72, 109) !important;
+  outline: none !important;
+}
+
+.to-show > h6 {
+  margin-bottom: 4px;
+  padding: 2px 10px 0px 10px;
+  text-align: left;
+  font-size: 13px;
+}
+
+.to-show > p {
+  margin-bottom: 10px;
+  padding: 0px 10px 0px 10px;
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: 0px;
+}
+
+.line {
+  width: 250px;
+  border-bottom: 1px solid black;
+  opacity: 0.3;
+  position: absolute;
+  left: 10px;
+  margin-top: 15px;
+}
+
+.signup-container {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.signup-box {
+  color: black;
+  text-align: center;
+  top: 120px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 440px;
+  height: 620px;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+  z-index: 0;
+}
+
+.signup {
+  font-size: 26px;
+  color: #7c7c7c !important;
+}
+
+/*Easily Using */
+.signup + p {
+  font-size: 13px;
+}
+
+/* Or using email */
+.signup + p ~ p {
+  font-size: 13px;
+}
+
+.l-fb-btn {
+  border: 1px solid silver !important;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  margin: 0px 8px;
+  color: blue;
+}
+
+.l-fb-btn:hover,
+.l-fb-btn:hover a {
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  color: salmon;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+}
+
+.signup ~ form > .fields {
+  border: 1px solid silver !important;
+  margin-left: 35px;
+  margin-right: 35px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.signup ~ form > .fields:hover {
+  border: 1px solid rgb(231, 74, 74) !important;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.signup ~ form > .fields .form-group > input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  color: #282c3f;
+  border: none;
+  outline: none;
+}
+
+.register-email {
+  font-size: 14px !important;
+}
+
+.register-password {
+  border-top: 1px solid #d5d6d9 !important;
+  font-size: 14px !important;
+}
+
+.register-mobile {
+  border-top: 1px solid #d5d6d9 !important;
+  font-size: 14px !important;
+}
+
+.register-gender {
+  border-top: 1px solid #d5d6d9 !important;
+  padding: 13px;
+  text-align: left;
+  color: #282c3f !important;
+  font-size: 14px !important;
+}
+
+.register-gender > input {
+  margin-left: 10px;
+  font-size: 14px !important;
+}
+
+.register-btn {
+  margin-top: 20px;
+}
+
+.register-btn input {
+  width: 93%;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  background-color: #ff527b !important;
+  outline: none !important;
+  border: none !important;
+  color: white !important;
+  height: 40px;
+}
+
+.register-btn input:hover {
+  background-color: #fc4772;
+}
+
+.existing-acc-login {
+  margin-top: 20px;
+  color: #626572;
+}
+
+/* ************************************************************************ Login Body */
+
+.login-container {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.login-box {
+  color: black;
+  text-align: center;
+  top: 120px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 520px;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+  z-index: 0;
+}
+
+.login {
+  font-size: 26px;
+  color: #7c7c7c !important;
+}
+
+/*Easily Using */
+.login + p {
+  font-size: 13px;
+}
+
+/* Or using email */
+.login + p ~ p {
+  font-size: 13px;
+}
+
+.login-btn {
+  margin-top: 30px;
+}
+
+.login-btn input {
+  width: 93%;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  background-color: #ff527b;
+  outline: none !important;
+  border: none !important;
+  color: white !important;
+  height: 40px;
+}
+
+.login-btn input:hover {
+  background-color: #fc4772;
+}
+
+.login ~ form > .fields {
+  border: 1px solid silver !important;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.login ~ form > .fields:hover {
+  border: 1px solid rgb(231, 74, 74) !important;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.login ~ form > .fields > input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  color: #282c3f;
+  border: none;
+  outline: 0;
+}
+
+.recover-password {
+  color: #ff527b;
+  margin-top: 20px;
+  float: left;
+  font-size: 14px;
+}
+
+.recover-password:hover {
+  text-decoration: none;
+}
+
+.newUser {
+  margin-top: 20px;
+  float: right;
+  font-size: 14px;
+}
+
+.newUser a {
+  color: #ff527b;
+}
+
+.newUser a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+#myCarousel {
+  margin-left: 70px;
+  margin-right: auto;
+  margin-top: 125px;
+  text-align: center;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 5px;
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(256, 256, 256, 0.9);
+}
+
+.w-80 {
+  max-width: 95%;
+}
+
+/* ******************************************************************************* Men Section */
+#menSection,
+#womenSection,
+#kidsSection {
+  padding: 3rem 0px 0px 0px;
+}
+
+.forHim {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding-top: 40px;
+}
+
+.products-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+
+.product-container {
+  min-height: 13rem;
+  width: 100%;
+  border: 2px soild black;
+  padding: 4px 4px;
+  color: black;
+}
+
+.men-product a {
+  text-decoration: none;
+}
+
+.product-container:hover {
+  cursor: pointer;
+  background-color: #fcfcfc;
+  text-decoration: none;
+  color: rgb(236, 35, 86);
+  -webkit-box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 24px -17px rgba(0, 0, 0, 0.75);
+}
+
+.product-img {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+}
+
+.men-product h3 {
+  text-transform: capitalize;
+  font-size: 1rem !important;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.men-product p {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.men-product h4 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.product-form {
+  display: none;
+}
+
+#itemBody {
+  margin: 10rem;
+}
+
+#itemBody h5 {
+  font-size: 16px !important;
+  font-weight: normal;
+  display: inline;
+}

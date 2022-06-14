@@ -1,0 +1,71 @@
+<header>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="navbar-brand align-item-center d-flex">
+      <a routerLink="/products" class="a-myntra-logo">
+        <img
+          style="margin-left: 14%"
+          class="myntra-logo"
+          src="https://www.financialexpress.com/wp-content/uploads/2021/02/myntra.jpg"
+        />
+      </a>
+
+      <strong style="font-size: 30px; margin-left: 3%; margin-right: 2%"
+        >myntra</strong
+      >
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="search products" />
+      </div>
+
+      <span class="fas fa-search search-icon"></span>
+       <!-- <li class="nav-item"> -->
+        <!-- <a  class= "nav-link" href="/login" style="margin-left: 90px;">Login</a> -->
+        <!-- </li> -->
+        <!-- <li class="nav-item"> -->
+        <!-- <a class= "nav-link" href="/sign-up" style="margin-left: 20px;">Sign-up</a> -->
+        <!-- </li> -->
+
+
+        <!-- <ul class="dropdown-menu">
+          <li>
+            <a  class= "nav-link" href="/login" >Login</a>
+          </li>
+          <li >
+            <a class= "nav-link" href="/sign-up" >Sign-up</a>
+          </li>
+          <li >
+            <a class="btn"  (click)="logout()">Logout</a>
+          </li>
+        </ul> -->
+    </div>
+
+    <div>
+    
+
+      <button routerLink="/wish-list" class="btn btn-dark">
+        <i style="font-size: 20px" class="far fa-heart"></i>
+
+        <div style="font-size: 10px" class="badge bg-success">
+          {{ wishItem }}
+        </div>
+      </button>
+
+      <button routerLink="/cart" class="btn btn-dark">
+        <i style="font-size: 20px" class="fas fa-cart-plus"></i>
+
+        <div style="font-size: 10px" class="badge bg-success">
+          {{ totalItem }}
+        </div>
+      </button>
+
+      <button routerLink="/login" class="btn btn-dark">
+        <a  (click)="logout()" style="font-size: small;">Logout</a>
+      </button>
+
+      <!-- <button routerLink="/login" class="btn btn-dark">
+       Login
+      </button> -->
+
+
+    </div>
+  </div>
+</header>

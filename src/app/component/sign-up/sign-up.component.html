@@ -1,0 +1,44 @@
+<section style="padding-top: 8%;">
+    <div class="container signup-container">
+      <div class="col signup-box">
+        <p class="roboto signup pt-3">Signup to Grasp!</p>
+        <!-- <p class="text-secondary text-uppercase mt-4">Easily using</p>
+        <button type="button" class="btn btn-outline-secondary l-fb-btn"><a
+            href="http://www.facebook.com">Facebook</a></button>
+        <button type="button" class="btn btn-outline-secondary l-fb-btn"><a
+            href="http://www.mail.google.com">Google</a></button>
+        <p class="text-secondary text-uppercase mt-5">- or using email -</p> -->
+        <form [formGroup]="signupForm" > 
+          <div class="fields">
+            <div class="form-group">
+              <input type="email" name="emailId" id="emailId" formControlName="email_Id" class="register-email"
+                placeholder="Enter mail id">
+              <!-- <small id="helpId" class="form-text text-muted" *ngIf="signupForm.controls['email_Id'].pristine">Please fill
+                this field as requested</small> -->
+            </div>
+            <div class="form-group">
+              <input type="password" name="password" id="" formControlName="password" class="register-password"
+                placeholder="Choose Password">
+              <!-- <small id="helpId" class="form-text text-muted" *ngIf="signupForm.controls['password'].dirty">Please fill
+                this field as requested</small> -->
+            </div>
+            <div class="form-group">
+              <input type="text" name="mobile" id="" formControlName="mobile" class="register-mobile"
+                placeholder="Mobile Number (For order status updates)">
+              <!-- <small id="helpId" class="form-text text-muted" *ngIf="signupForm.controls['mobile'].untouched">Please fill
+                this field as requested</small> -->
+            </div>
+            <div class="register-gender">
+              <input type="radio" name="gender" value="male" id="" formControlName="gender">Male
+              <input type="radio" name="gender" value="female" id="" formControlName="gender">Female
+            </div>
+          </div>
+          <fieldset class="login-btn" (click)="OnRegister()">
+            <input type="submit" value="register" class="roboto">
+          </fieldset>
+        </form>
+        <p class="existing-acc-login">Already have an account? <span><a [routerLink]="['/login']">Login!</a></span>
+        </p>
+      </div>
+    </div>
+  </section>

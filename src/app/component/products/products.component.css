@@ -1,0 +1,77 @@
+card-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+}
+
+.item img {
+    width: 64px;
+    cursor: pointer;
+}
+
+.item {
+    margin: 0px 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.item a:hover {
+    color: purple;
+}
+
+.card {
+    padding: 20px;
+    margin: 50px;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.fa-heart {
+    color:palevioletred;
+    cursor: pointer;
+}
+
+.sort{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.5em 2em 0.5em 0.5em;
+    border: 1px solid #eee;
+    font: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+    background-position: right 15px top 1em, right 10px top 1em;
+    background-size: 5px 5px, 5px 5px;
+}
+
+
+.select{
+  margin-top: 2%;
+  width: 100px;
+  height: 30px;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  border: 2px double red;
+  display: inline-block;
+  position: relative;
+}
